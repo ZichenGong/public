@@ -1,0 +1,147 @@
+---
+title: "CPSC537 Final Project"
+author: "Zichen Gong, Ruiqi Zhang, Zi'ang Li"
+date: "2023-11-19"
+output: html_document
+---
+
+```{r, message=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r, message=FALSE}
+merged_ <- read_csv("/Users/gongzichen/Desktop/school materials/yale/1st year/CPSC537/assignment/final project/cleaned_dataframes/merged_.csv")
+playoffs <- read_csv("/Users/gongzichen/Desktop/school materials/yale/1st year/CPSC537/assignment/final project/cleaned_dataframes/playoffs.csv")
+```
+
+```{r}
+df <- merge(merged_, playoffs, by = "Team", all.x = TRUE)
+```
+
+This dataset offers a detailed snapshot of player statistics and team performance in the NBA, making it an invaluable resource for predictive modeling, player performance analysis, and team strategy formulation in the realm of basketball analytics.
+
+Team: Indicates the NBA team to which each player belongs.
+Player: The name of each individual player.
+Position: The playing position of each player within their respective team.
+Weight: The weight of each player, an important physical attribute in player performance analysis.
+Height: The height of each player, another crucial physical characteristic in basketball.
+Rk (Rank): The initial rank of each player within their team, based on performance metrics.
+Age: The age of each player, offering insights into experience and career stage.
+MP (Average Minutes Per Game): Represents the average amount of game time each player secures, indicating their role and significance in the team.
+eFG% (Effective Field Goal Percentage): A measure of shooting performance that accounts for the value of three-point field goals.
+TRB (Total Rebounds): The total number of rebounds secured by each player, highlighting their defensive contributions.
+AST (Assists): The number of assists each player has, reflecting their playmaking ability.
+PTS (Points Per Game): The average number of points scored by each player per game, a key performance indicator in basketball.
+Coach-Playoff: The number of times each team's current coach has led the team to the NBA playoffs, providing a measure of coaching experience and success.
+New_Rk (New Rank): A revised ranking of players within each team. This reordering addresses the gaps created in the original ranks due to the exclusion of certain players during data cleaning.
+num_playoffs: The total number of playoff appearances for each team in history, illustrating the team's overall performance over time.
+
+```{r, message=FALSE}
+# Rename columns
+names(df)[names(df) == "eFG%"] <- "eFG"
+names(df)[names(df) == "Coach-Playoff"] <- "Coach_Playoff"
+
+# Convert categorical variables
+df$Team <- as.factor(df$Team)
+```
+
+```{r}
+calculate_scores <- function(column, reverse = FALSE) {
+  rank_values <- rank(-column, ties.method = "min")  # 'min' method for ties
+  if(reverse) {
+    rank_values <- rank(column, ties.method = "min")
+  }
+  scores <- (139 - rank_values) / 138
+  return(scores)
+}
+
+# Apply the scoring function to each column
+df_scored <- df %>%
+  mutate(across(where(is.numeric), ~calculate_scores(.), .names = "score_{.col}")) %>%
+  mutate(score_Age = calculate_scores(Age, reverse = TRUE))
+
+# Sum scores for the top 5 players (by New_Rk) in each team
+team_scores <- df_scored %>%
+  group_by(Team) %>%
+  top_n(-5, New_Rk) %>%
+  summarise(Total_Score = sum(score_Weight, score_Height, score_Age, score_MP, score_eFG, score_TRB, score_AST, score_PTS))
+
+# Rank teams based on total score
+team_rankings <- team_scores %>%
+  arrange(desc(Total_Score))
+```
+
+```{r}
+team_scores <- df_scored %>%
+  group_by(Team) %>%
+  top_n(-5, New_Rk) %>%
+  summarise(Player_Total_Score = sum(score_Weight, score_Height, score_Age, score_MP, score_eFG, score_TRB, score_AST, score_PTS))
+
+# Calculate the team score by adding Coach_Playoff and num_playoffs scores
+team_scores <- team_scores %>%
+  left_join(df_scored %>% select(Team, score_Coach_Playoff, score_num_playoffs) %>% distinct(), by = "Team") %>%
+  mutate(Total_Score = Player_Total_Score + score_Coach_Playoff + score_num_playoffs)
+
+# Rank teams based on the adjusted total score
+team_rankings <- team_scores %>%
+  arrange(desc(Total_Score))
+
+# View team rankings
+print(team_rankings)
+```
+
+```{r}
+write.csv(team_rankings, "/Users/gongzichen/Desktop/school materials/yale/1st year/CPSC537/assignment/final project/rank_equal.csv", row.names = FALSE)
+```
+
+
+```{r}
+calculate_scores <- function(column, full_mark = 1, reverse = FALSE) {
+  rank_values <- rank(-column, ties.method = "min")  # 'min' method for ties
+  if(reverse) {
+    rank_values <- rank(column, ties.method = "min")
+  }
+  # Scale scores based on the full mark
+  scores <- (full_mark * (139 - rank_values)) / 138
+  return(scores)
+}
+
+# Apply the scoring function to each column with specified full marks
+df_scored <- df %>%
+  mutate(
+    score_Weight = calculate_scores(Weight),
+    score_Height = calculate_scores(Height),
+    score_Age = calculate_scores(Age, reverse = TRUE),
+    score_MP = calculate_scores(MP, full_mark = 2),
+    score_eFG = calculate_scores(eFG, full_mark = 2),
+    score_TRB = calculate_scores(TRB, full_mark = 2),
+    score_AST = calculate_scores(AST, full_mark = 2),
+    score_PTS = calculate_scores(PTS, full_mark = 2),
+    score_Coach_Playoff = calculate_scores(Coach_Playoff),
+    score_num_playoffs = calculate_scores(num_playoffs)
+  )
+
+# Sum scores for the top 5 players (by New_Rk) in each team
+team_scores <- df_scored %>%
+  group_by(Team) %>%
+  top_n(-5, New_Rk) %>%
+  summarise(Player_Total_Score = sum(score_Weight, score_Height, score_Age, score_MP, score_eFG, score_TRB, score_AST, score_PTS))
+
+# Add Coach_Playoff and num_playoffs scores to the team's total score
+team_scores <- team_scores %>%
+  left_join(df_scored %>% select(Team, score_Coach_Playoff, score_num_playoffs) %>% distinct(), by = "Team") %>%
+  mutate(Total_Score = Player_Total_Score + score_Coach_Playoff + score_num_playoffs)
+
+# Rank teams based on total score
+team_rankings <- team_scores %>%
+  arrange(desc(Total_Score))
+
+# View team rankings
+print(team_rankings)
+```
+
+```{r}
+write.csv(team_rankings, "/Users/gongzichen/Desktop/school materials/yale/1st year/CPSC537/assignment/final project/rank_adjusted.csv", row.names = FALSE)
+```

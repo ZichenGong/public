@@ -1,0 +1,147 @@
+Player,Position,Height,Weight,Team,Rk,Age,MP,eFG%,TRB,AST,PTS,Coach-Playoff
+Zion Williamson,PF,6-6,284,New Orleans Pelicans,3,22,33.0,0.615,7.0,4.6,26.0,1
+Brandon Ingram,SF,6-8,190,New Orleans Pelicans,2,25,34.2,0.522,5.5,5.8,24.7,1
+CJ McCollum,SG,6-3,190,New Orleans Pelicans,1,31,35.3,0.515,4.4,5.7,20.9,1
+Herbert Jones,PF,6-8,210,New Orleans Pelicans,5,24,29.6,0.525,4.1,2.5,9.8,1
+Jonas Valančiūnas,C,6-11,265,New Orleans Pelicans,6,30,24.9,0.57,10.2,1.8,14.1,1
+Dyson Daniels,PG,6-8,199,New Orleans Pelicans,11,19,17.7,0.483,3.2,2.3,3.8,1
+Larry Nance Jr.,C,6-7,245,New Orleans Pelicans,10,30,21.2,0.633,5.4,1.8,6.8,1
+Naji Marshall,SF,6-7,220,New Orleans Pelicans,7,25,23.3,0.49,3.6,2.5,9.1,1
+Trey Murphy III,SF,6-9,206,New Orleans Pelicans,4,22,31.0,0.61,3.6,1.4,14.5,1
+Jose Alvarado,PG,6-0,179,New Orleans Pelicans,9,24,21.5,0.496,2.3,3.0,9.0,1
+Shai Gilgeous-Alexander,PG,6-6,180,Oklahoma City Thunder,1,24,35.5,0.531,4.8,5.5,31.4,0
+Luguentz Dort,SF,6-3,215,Oklahoma City Thunder,3,23,30.7,0.466,4.6,2.1,13.7,0
+Jalen Williams,SG,6-6,195,Oklahoma City Thunder,4,21,30.3,0.567,4.5,3.3,14.1,0
+Isaiah Joe,SG,6-4,165,Oklahoma City Thunder,7,23,19.1,0.599,2.4,1.2,9.5,0
+Josh Giddey,PF,6-8,210,Oklahoma City Thunder,2,20,31.1,0.516,7.9,6.2,16.6,0
+Ousmane Dieng,PF,6-10,216,Oklahoma City Thunder,13,19,14.6,0.492,2.7,1.2,4.9,0
+Aaron Wiggins,SG,6-6,200,Oklahoma City Thunder,10,24,18.5,0.579,3.0,1.1,6.8,0
+Tre Mann,PG,6-3,178,Oklahoma City Thunder,11,21,17.7,0.474,2.3,1.8,7.7,0
+Aleksej Pokusevski,PF,7-0,190,Oklahoma City Thunder,6,21,20.6,0.51,4.7,1.9,8.1,0
+Jaylin Williams,C,6-10,240,Oklahoma City Thunder,9,20,18.7,0.534,4.9,1.6,5.9,0
+Kenrich Williams,PF,6-6,210,Oklahoma City Thunder,5,28,22.8,0.59,4.9,2.0,8.0,0
+Dāvis Bertāns,PF,6-10,225,Oklahoma City Thunder,16,30,10.9,0.603,1.2,0.5,4.6,0
+Nikola Jokić,C,6-11,284,Denver Nuggets,2,27,39.5,0.591,13.5,9.5,30.0,5
+Jamal Murray,PG,6-4,215,Denver Nuggets,1,25,40.0,0.545,5.7,7.1,26.1,5
+Kentavious Caldwell-Pope,SG,6-5,204,Denver Nuggets,4,29,33.6,0.565,3.3,1.6,10.6,5
+Aaron Gordon,PF,6-8,235,Denver Nuggets,3,27,35.7,0.564,6.0,2.6,13.3,5
+Michael Porter Jr.,SF,6-10,218,Denver Nuggets,5,24,32.7,0.521,8.1,1.6,13.4,5
+Christian Braun,SG,6-7,218,Denver Nuggets,8,21,13.0,0.556,2.1,0.6,3.2,5
+Justin Holiday,SG,6-6,180,Denver Nuggets,11,33,16.4,0.468,1.8,0.9,4.4,5
+Luka Dončić,PG,6-7,230,Dallas Mavericks,2,23,36.2,0.56,8.6,8.0,32.4,4
+Kyrie Irving,SG,6-2,195,Dallas Mavericks,1,30,38.2,0.586,5.0,6.0,27.0,4
+Tim Hardaway Jr.,SF,6-5,205,Dallas Mavericks,6,30,30.3,0.527,3.5,1.8,14.4,4
+Josh Green,SG,6-5,200,Dallas Mavericks,8,22,25.7,0.626,3.0,1.7,9.1,4
+Maxi Kleber,PF,6-10,240,Dallas Mavericks,9,31,25.1,0.571,3.6,1.4,5.9,4
+Dwight Powell,C,6-10,240,Dallas Mavericks,10,31,19.2,0.732,4.1,0.9,6.7,4
+Jaden Hardy,SG,6-4,198,Dallas Mavericks,13,20,14.8,0.533,1.9,1.4,8.8,4
+Kevin Durant,PF,6-10,240,Phoenix Suns,1,34,42.4,0.516,8.7,5.5,29.0,7
+Eric Gordon,SG,6-3,215,Phoenix Suns,4,34,29.8,0.523,1.4,2.6,10.2,7
+Eric Gordon,SG,6-3,215,Phoenix Suns,4,34,30.2,0.528,2.1,2.9,13.1,7
+Josh Okogie,SG,6-4,213,Phoenix Suns,7,24,17.5,0.405,2.1,1.3,4.1,7
+Jusuf Nurkić,C,6-11,290,Phoenix Suns,9,28,26.8,0.561,9.1,2.9,13.3,7
+Drew Eubanks,C,6-9,245,Phoenix Suns,15,25,20.3,0.651,5.4,1.3,6.6,7
+Nassir Little,PF,6-5,220,Phoenix Suns,17,22,18.1,0.538,2.6,0.9,6.6,7
+Devin Booker,SG,6-5,206,Phoenix Suns,2,26,41.7,0.649,4.8,7.2,33.7,7
+Keita Bates-Diop,SF,6-8,229,Phoenix Suns,12,27,21.7,0.568,3.7,1.5,9.7,7
+Damion Lee,SG,6-5,210,Phoenix Suns,12,30,11.1,0.375,1.4,0.6,2.1,7
+Anthony Edwards,SG,6-4,225,Minnesota Timberwolves,1,21,36.0,0.528,5.8,4.4,24.6,2
+Naz Reid,C,6-9,264,Minnesota Timberwolves,11,23,18.4,0.602,4.9,1.1,11.5,2
+Karl-Anthony Towns,PF,6-11,248,Minnesota Timberwolves,2,27,33.0,0.565,8.1,4.8,20.8,2
+Rudy Gobert,C,7-1,258,Minnesota Timberwolves,5,30,30.7,0.659,11.6,1.2,13.4,2
+Mike Conley,PG,6-1,175,Minnesota Timberwolves,4,35,31.4,0.583,3.1,5.0,14.0,2
+Mike Conley,PG,6-1,175,Minnesota Timberwolves,3,35,29.7,0.511,2.5,7.7,10.7,2
+Kyle Anderson,PF,6-9,230,Minnesota Timberwolves,7,29,28.4,0.553,5.3,4.9,9.4,2
+Nickeil Alexander-Walker,SG,6-6,205,Minnesota Timberwolves,13,24,15.5,0.488,1.8,1.4,5.9,2
+Nickeil Alexander-Walker,SG,6-6,205,Minnesota Timberwolves,16,24,14.7,0.591,1.6,2.1,6.3,2
+Troy Brown Jr.,SF,6-6,215,Minnesota Timberwolves,9,23,10.3,0.393,2.0,0.9,1.8,2
+Jordan McLaughlin,PG,5-11,185,Minnesota Timberwolves,12,26,15.8,0.503,1.4,3.4,3.7,2
+Daishen Nix,PG,6-5,224,Minnesota Timberwolves,9,20,16.0,0.426,1.7,2.3,4.0,2
+Jaden McDaniels,SF,6-9,185,Minnesota Timberwolves,6,22,30.6,0.591,3.9,1.9,12.1,2
+Anthony Davis,C,6-10,253,Los Angeles Lakers,2,29,38.0,0.53,14.1,2.6,22.6,1
+LeBron James,PF,6-9,250,Los Angeles Lakers,1,38,38.7,0.546,9.9,6.5,24.5,1
+D'Angelo Russell,PG,6-4,193,Los Angeles Lakers,4,26,29.6,0.495,2.9,4.6,13.3,1
+D'Angelo Russell,PG,6-4,193,Los Angeles Lakers,3,26,32.9,0.567,3.1,6.2,17.9,1
+Austin Reaves,SG,6-5,206,Los Angeles Lakers,3,24,36.2,0.564,4.4,4.6,16.9,1
+Taurean Prince,PF,6-7,218,Los Angeles Lakers,8,28,22.1,0.565,2.4,1.6,9.1,1
+Christian Wood,PF,6-10,214,Los Angeles Lakers,7,27,25.9,0.583,7.3,1.8,16.6,1
+Rui Hachimura,PF,6-8,230,Los Angeles Lakers,6,24,24.3,0.63,3.6,0.6,12.2,1
+Cam Reddish,SF,6-8,218,Los Angeles Lakers,7,23,27.6,0.523,2.9,1.9,11.0,1
+Jaxson Hayes,C,6-11,220,Los Angeles Lakers,13,22,13.0,0.561,2.8,0.7,5.0,1
+Jarred Vanderbilt,PF,6-9,214,Los Angeles Lakers,7,23,16.5,0.458,3.2,0.8,4.6,1
+Jarred Vanderbilt,PF,6-9,214,Los Angeles Lakers,7,23,24.1,0.587,7.9,2.7,8.3,1
+Kawhi Leonard,SF,6-7,225,Los Angeles Clippers,1,31,40.0,0.614,6.5,6.0,34.5,5
+Bones Hyland,PG,6-3,173,Los Angeles Clippers,10,22,16.4,0.398,0.8,0.8,8.6,5
+Norman Powell,SG,6-3,215,Los Angeles Clippers,3,29,33.4,0.559,3.0,2.2,21.8,5
+Ivica Zubac,C,7-0,240,Los Angeles Clippers,6,25,26.0,0.567,9.6,0.6,9.2,5
+Russell Westbrook,PG,6-3,200,Los Angeles Clippers,2,34,38.4,0.457,7.6,7.4,23.6,5
+Mason Plumlee,C,6-11,254,Los Angeles Clippers,9,32,18.2,0.875,6.8,1.8,8.2,5
+Nicolas Batum,PF,6-8,230,Los Angeles Clippers,8,34,18.4,0.579,2.2,1.2,4.4,5
+Kenyon Martin Jr.,SF,6-6,215,Los Angeles Clippers,6,22,28.0,0.617,5.5,1.5,12.7,5
+Terance Mann,SG,6-5,215,Los Angeles Clippers,5,26,26.6,0.712,3.2,2.2,10.6,5
+Marcus Morris,PF,6-8,218,Los Angeles Clippers,7,33,22.7,0.379,4.0,0.0,8.7,5
+De'Aaron Fox,PG,6-3,185,Sacramento Kings,1,25,38.6,0.488,5.4,7.7,27.4,7
+Harrison Barnes,PF,6-8,225,Sacramento Kings,4,30,28.0,0.467,3.4,0.7,10.7,7
+Domantas Sabonis,C,6-11,240,Sacramento Kings,2,26,34.7,0.5,11.0,4.7,16.4,7
+Keegan Murray,SF,6-8,215,Sacramento Kings,5,22,27.7,0.552,6.3,0.7,9.7,7
+Malik Monk,SG,6-3,200,Sacramento Kings,3,24,29.3,0.478,5.4,3.6,19.0,7
+Kevin Huerter,SG,6-7,190,Sacramento Kings,6,24,26.1,0.403,4.4,1.1,9.1,7
+Davion Mitchell,PG,6-2,205,Sacramento Kings,7,24,20.0,0.489,1.3,1.7,7.1,7
+Trey Lyles,PF,6-9,234,Sacramento Kings,8,27,16.9,0.538,5.7,0.7,6.6,7
+Devin Vassell,SG,6-5,200,San Antonio Spurs,2,22,31.0,0.525,3.9,3.6,18.5,22
+Keldon Johnson,SF,6-5,220,San Antonio Spurs,1,23,32.7,0.512,5.0,2.9,22.0,22
+Jeremy Sochan,PF,6-9,230,San Antonio Spurs,6,19,26.0,0.483,5.3,2.5,11.0,22
+Zach Collins,C,6-11,250,San Antonio Spurs,11,25,22.9,0.568,6.4,2.9,11.6,22
+Tre Jones,PG,6-1,185,San Antonio Spurs,3,23,29.2,0.489,3.6,6.6,12.9,22
+Malaki Branham,SG,6-5,180,San Antonio Spurs,8,19,23.5,0.503,2.7,1.9,10.2,22
+Doug McDermott,SF,6-7,225,San Antonio Spurs,14,31,20.5,0.575,2.2,1.4,10.2,22
+Charles Bassey,C,6-11,235,San Antonio Spurs,19,22,14.5,0.656,5.5,1.3,5.7,22
+Blake Wesley,SG,6-5,185,San Antonio Spurs,16,19,18.1,0.367,2.2,2.7,5.0,22
+Julian Champagnie,SF,6-8,220,San Antonio Spurs,13,21,20.9,0.59,4.0,0.7,11.0,22
+Devonte' Graham,PG,6-1,195,San Antonio Spurs,12,27,15.3,0.511,1.4,2.2,5.3,22
+Devonte' Graham,PG,6-1,195,San Antonio Spurs,4,27,26.4,0.513,2.5,4.0,13.0,22
+Sandro Mamukelashvili,C,6-11,240,San Antonio Spurs,10,23,23.3,0.52,6.8,2.4,10.8,22
+Stephen Curry,PG,6-2,185,Golden State Warriors,1,34,37.9,0.558,5.2,6.1,30.5,7
+Klay Thompson,SF,6-6,215,Golden State Warriors,2,32,36.0,0.502,4.2,2.2,18.5,7
+Chris Paul,PG,6-0,175,Golden State Warriors,3,37,35.7,0.467,5.0,7.4,12.4,7
+Moses Moody,SG,6-6,205,Golden State Warriors,9,20,13.4,0.686,2.6,0.7,5.8,7
+Andrew Wiggins,SF,6-7,197,Golden State Warriors,3,27,34.0,0.511,5.6,1.9,16.7,7
+Kevon Looney,C,6-9,222,Golden State Warriors,5,26,25.0,0.578,13.1,3.3,6.5,7
+Dario Šarić,PF,6-10,225,Golden State Warriors,15,28,13.7,0.606,3.3,0.9,7.4,7
+Gary Payton II,SG,6-3,190,Golden State Warriors,8,30,16.0,0.704,3.7,0.8,6.8,7
+Gary Payton II,SG,6-3,190,Golden State Warriors,19,30,17.0,0.695,2.6,1.5,4.1,7
+Draymond Green,PF,6-6,230,Golden State Warriors,4,32,30.6,0.489,6.9,6.8,9.4,7
+Lauri Markkanen,PF,7-0,240,Utah Jazz,1,25,34.4,0.586,8.6,1.9,25.6,0
+Jordan Clarkson,SG,6-4,194,Utah Jazz,2,30,32.6,0.519,4.0,4.4,20.8,0
+Collin Sexton,PG,6-1,190,Utah Jazz,8,24,23.9,0.558,2.2,2.9,14.3,0
+Kelly Olynyk,C,6-11,240,Utah Jazz,4,31,28.6,0.583,6.2,3.7,12.5,0
+Talen Horton-Tucker,SG,6-4,234,Utah Jazz,12,22,20.2,0.467,3.2,3.8,10.7,0
+Walker Kessler,C,7-1,245,Utah Jazz,10,21,23.0,0.721,8.4,0.9,9.2,0
+Kris Dunn,PG,6-3,205,Utah Jazz,6,28,25.8,0.576,4.5,5.6,13.2,0
+Ochai Agbaji,SG,6-5,215,Utah Jazz,11,22,20.5,0.532,2.1,1.1,7.9,0
+Simone Fontecchio,SF,6-8,209,Utah Jazz,15,27,14.7,0.47,1.7,0.8,6.3,0
+Luka Šamanić,PF,6-10,227,Utah Jazz,9,23,23.0,0.526,4.3,2.1,9.9,0
+Alperen Şengün,C,6-9,235,Houston Rockets,5,20,28.9,0.565,9.0,3.9,14.8,1
+Jalen Green,SG,6-4,178,Houston Rockets,2,20,34.2,0.485,3.7,3.7,22.1,1
+Dillon Brooks,SG,6-7,225,Houston Rockets,5,27,27.8,0.377,3.0,1.8,10.5,1
+Jabari Smith Jr.,PF,6-10,220,Houston Rockets,3,19,31.0,0.475,7.2,1.3,12.8,1
+Jeff Green,PF,6-8,235,Houston Rockets,7,36,17.2,0.524,1.6,0.7,4.1,1
+Jae'Sean Tate,SF,6-4,230,Houston Rockets,7,27,21.8,0.509,3.8,2.7,9.1,1
+Reggie Bullock,SF,6-6,205,Houston Rockets,5,31,30.3,0.569,3.6,1.4,7.2,1
+Jeenathan Williams,SG,6-5,205,Houston Rockets,10,23,25.4,0.654,3.0,2.0,10.6,1
+Jock Landale,C,6-11,256,Houston Rockets,9,27,16.1,0.63,4.0,0.4,6.1,1
+Tari Eason,PF,6-8,216,Houston Rockets,8,21,21.5,0.493,6.0,1.1,9.3,1
+Shaedon Sharpe,SG,6-6,200,Portland Trail Blazers,13,19,22.2,0.551,3.0,1.2,9.9,0
+Jerami Grant,PF,6-8,210,Portland Trail Blazers,2,28,35.7,0.554,4.5,2.4,20.5,0
+Deandre Ayton,C,6-11,250,Portland Trail Blazers,4,24,31.9,0.55,9.7,1.0,13.4,0
+Jabari Walker,SF,6-9,215,Portland Trail Blazers,22,20,11.1,0.46,2.3,0.6,3.9,0
+Matisse Thybulle,SG,6-5,201,Portland Trail Blazers,6,25,27.7,0.558,3.5,1.4,7.4,0
+Anfernee Simons,SG,6-3,181,Portland Trail Blazers,3,23,35.0,0.548,2.6,4.1,21.1,0
+Justin Minaya,SF,6-5,210,Portland Trail Blazers,12,23,22.3,0.37,3.8,1.0,4.3,0
+Desmond Bane,SG,6-5,215,Memphis Grizzlies,1,24,38.5,0.491,6.0,3.2,23.5,3
+Jaren Jackson Jr.,C,6-11,242,Memphis Grizzlies,3,23,36.7,0.464,7.8,1.5,18.0,3
+Xavier Tillman Sr.,C,6-8,245,Memphis Grizzlies,4,24,30.5,0.544,8.0,3.2,8.7,3
+David Roddy,PF,6-6,255,Memphis Grizzlies,9,21,12.7,0.379,2.8,0.7,3.8,3
+Luke Kennard,SG,6-5,206,Memphis Grizzlies,6,26,21.4,0.696,4.0,1.4,7.2,3
+Santi Aldama,PF,6-11,224,Memphis Grizzlies,8,22,16.8,0.561,4.3,1.2,6.5,3
+Ja Morant,PG,6-3,174,Memphis Grizzlies,2,23,37.4,0.486,6.8,7.0,24.6,3
