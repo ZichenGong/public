@@ -1,0 +1,47 @@
+---
+title: How Academic Background Affect Partisanship towards Liberal Party
+  and Conservative Party
+date: "29/11/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(cesR)
+library(tidyverse)
+```
+
+The two datasets used for this assignment come from Canadian Election Study (CES) [5] and General Social Survey (GSS) [2]. 
+
+The CES was conducted in year 2019 using phone surveys, initiated by Advanis Inc. [6]. The target population is all eligible voters. This dataset was collected during and after the 2019 election campaign, mainly focusing on people's attitudes towards the election and their basic personal information. The first collection period, which was during the campaign, was between September 10 and October 20. The second collection period, which was after the campaign, was between October 22 and November 21. Among all the respondents, 66% of the participants were interviewed via wireless telephones, the remaining participants replied via landline telephones. 
+
+The GSS was oriented by Statistics Canada in year 2017 [2]. The target population is all people who are 15 years or older in Canada, excluding residents from Yukon, Northwest Territories, and Nunavut, as well as full-time residents of institutions. The core purpose of this survey was related to changes in living conditions and social well-beings. Participants were asked about core information and classification variables (sex, age, income, etc.) through telephone interviews. The overall respond rate was around 52.4%, which we could not conclude as a large proportion. If one selected respondent refused to participate at first, this person would receive up to two more calls reiterating the importance of this survey and being encouraged to respond. 
+
+It appeared historically in US elections that the Republic Party is more favorable among educated middle-class voters, while working-class voters favor the Democratic Party more [3]. As two largest political parties in Canada, the winner between the Liberal Party and the Conservative Party is almost the winner of the election. As a result, I intend to investigate whether academic background would affect people's partisanship between Liberal Party and Conservative Party. 
+
+After data cleaning, I intend to use logistic multilevel regression model and post-stratification for the percentage vote share split between these two parties. Propensity score matching will be applied during this process for more precise result. P values, VIF value [1], AIC and BIC values [5] will be used for model selection.
+
+```{r, include=FALSE}
+census_data <- read_csv("gss_clean.csv")
+get_cescodes()
+get_ces("ces2019_phone")
+survey_data <- as_tibble(ces2019_phone)
+```
+
+
+## Bibliography
+
+1. Akinwande, Olusegun & Dikko, H.G & Agboola, Samson. (2015). Variance Inflation Factor: As a Condition for the Inclusion of Suppressor Variable(s) in Regression Analysis. Open Journal of Statistics. 05. 754-767. 10.4236/ojs.2015.57075. 
+
+2. Diversity and Sociocultural Statistics. (2020, April). *General Social Survey Cycle 31 : Families Public Use Microdata File Documentation and User’s Guide.* CHASS. [https://sda-artsci-utoronto-ca.myaccess.library.utoronto.ca/sdaweb/dli2/gss/gss31/gss31/more_doc/GSS31_User_Guide.pdf](https://sda-artsci-utoronto-ca.myaccess.library.utoronto.ca/sdaweb/dli2/gss/gss31/gss31/more_doc/GSS31_User_Guide.pdf). (Last Accessed: November 29, 2021)
+
+3. Northwestern University. (2021, August 17). How COVID-19 death rates impacted 2020
+presidential voting patterns: Study findings mirror the ongoing dealignment of the
+U.S. political party system. NORTHWESTERN NOW. https://news.northwestern.edu/stories/2021/08/how-covid-19-death-rates-impacted-
+2020-presidential-voting/
+
+4. Rossi, R., Murari, A., Gaudio, P., & Gelfusa, M. (2020) *Upgrading Model Selection Criteria with Goodness of Fit Tests for Practical Applications*. entropy. Retrieved November 2, 2021, from [https://www.mdpi.com/1099-4300/22/4/447/pdf](https://www.mdpi.com/1099-4300/22/4/447/pdf).
+
+5. Stephenson, L.B., Harell, A., Rubenson, D., Loewen, P. J. (2020). 2019 Canadian Election Study - Phone Survey, [https://doi.org/10.7910/DVN/8RHLG1](https://doi.org/10.7910/DVN/8RHLG1), Harvard Dataverse, V1, UNF:6:eyR28qaoYlHj9qwPWZmmVQ== [fileUNF]
+
+6. Stephenson, L.B., Harell, A., Rubenson, D., Loewen, P. J. (2020). 2019 Canadian Election Study - Phone Survey Technical Report.pdf, *2019 Canadian Election Study - Phone Survey*, [https://doi.org/10.7910/DVN/8RHLG1/1PBGR3](https://doi.org/10.7910/DVN/8RHLG1/1PBGR3), Harvard Dataverse, V1
